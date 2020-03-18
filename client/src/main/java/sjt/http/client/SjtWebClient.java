@@ -31,6 +31,8 @@ public class SjtWebClient {
         OkHttpClient client = new OkHttpClient();
         HttpURLConnection connection = client.open(new URL("http://localhost:8080/testabc"));
         String contentType = connection.getContentType();
+        String contentType2 = connection.getContentType();
+        String contentType3 = connection.getContentType();
         System.out.println(contentType);
         System.out.println(connection.getResponseCode());
         System.out.println(connection.getResponseMessage());
